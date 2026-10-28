@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title">
+  <title id="title">Sample web project dashboard preview</title>
+  <rect width="640" height="360" fill="#e5edf3"/>
+  <rect x="36" y="28" width="568" height="304" rx="18" fill="#ffffff"/>
+  <rect x="36" y="28" width="568" height="54" rx="18" fill="#123047"/>
+  <rect x="66" y="48" width="132" height="14" rx="7" fill="#bfe9e3"/>
+  <rect x="62" y="104" width="110" height="208" rx="10" fill="#e5edf3"/>
+  <rect x="192" y="106" width="364" height="24" rx="8" fill="#dcefeb"/>
+  <rect x="192" y="146" width="172" height="72" rx="10" fill="#f3f6fa"/>
+  <rect x="384" y="146" width="172" height="72" rx="10" fill="#f3f6fa"/>
+  <rect x="192" y="234" width="364" height="18" rx="9" fill="#123047"/>
+  <rect x="192" y="268" width="300" height="10" rx="5" fill="#9aabb7"/>
+  <rect x="192" y="288" width="330" height="10" rx="5" fill="#c2ced6"/>
+</svg>

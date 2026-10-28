@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title">
+  <title id="title">Recipe finder preview</title>
+  <rect width="640" height="360" fill="#e5edf3"/>
+  <rect x="36" y="28" width="568" height="304" rx="18" fill="#ffffff"/>
+  <rect x="36" y="28" width="568" height="54" rx="18" fill="#123047"/>
+  <rect x="66" y="48" width="132" height="14" rx="7" fill="#bfe9e3"/>
+  <rect x="68" y="108" width="240" height="18" rx="9" fill="#123047"/>
+  <rect x="68" y="146" width="232" height="148" rx="14" fill="#dcefeb"/>
+  <circle cx="184" cy="219" r="54" fill="#f2bd4b"/>
+  <circle cx="184" cy="219" r="39" fill="#d96b45"/>
+  <circle cx="170" cy="207" r="7" fill="#f7e6a1"/>
+  <circle cx="199" cy="230" r="8" fill="#f7e6a1"/>
+  <rect x="340" y="150" width="200" height="16" rx="8" fill="#123047"/>
+  <rect x="340" y="184" width="174" height="11" rx="5" fill="#9aabb7"/>
+  <rect x="340" y="207" width="188" height="11" rx="5" fill="#c2ced6"/>
+  <rect x="340" y="248" width="154" height="28" rx="14" fill="#006b63"/>
+</svg>

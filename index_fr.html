@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr-CA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de développement Web | HTML, CSS et JavaScript</title>
+    <meta name="description" content="Découvrez un portfolio de développement Web présentant des projets et des compétences en HTML, CSS et JavaScript. Communiquez avec moi au moyen du formulaire de contact.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Portfolio de développement Web | HTML, CSS et JavaScript">
+    <meta property="og:description" content="Découvrez des projets et des compétences en développement Web, notamment en HTML, CSS et JavaScript.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header id="home">
+        <h1>Mon portfolio</h1>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" hidden>
+            <span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+            <span>Menu</span>
+        </button>
+        <nav id="primary-navigation" aria-label="Navigation principale">
+            <ul>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about-me">À propos</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#skills">Compétences</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html">English</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about-me" aria-labelledby="about-heading">
+            <h2 id="about-heading">À propos de moi</h2>
+            <p>Voici la section où je me présente. Vous y trouverez quelques renseignements à mon sujet.</p>
+        </section>
+        <section id="projects" aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Projets</h2>
+            <p>Voici quelques projets fictifs qui illustrent différentes idées de sites et d’applications Web.</p>
+            <div class="project-filter">
+                <label for="project-category">Filtrer les projets par catégorie :</label>
+                <select id="project-category">
+                    <option value="all">Toutes les catégories</option>
+                    <option value="web">Conception Web</option>
+                    <option value="dashboard">Tableaux de bord</option>
+                    <option value="food">Cuisine</option>
+                    <option value="productivity">Productivité</option>
+                </select>
+                <p id="project-filter-status" aria-live="polite"></p>
+            </div>
+            <div class="project-cards" role="region" aria-label="Cartes de projets défilantes" tabindex="0">
+                <article class="project-card" id="project1" data-category="web">
+                    <h3>Projet 1</h3>
+                    <p>Exemple de page Web fictive présentant une mise en page simple.</p>
+                    <figure>
+                        <button class="lightbox-trigger" type="button">
+                            <img src="project1.svg" alt="Illustration d’une page Web fictive" loading="lazy" decoding="async">
+                        </button>
+                        <figcaption>Maquette d’une page Web</figcaption>
+                    </figure>
+                </article>
+                <article class="project-card" id="project2" data-category="dashboard">
+                    <h3>Projet 2</h3>
+                    <p>Exemple fictif d’un tableau de bord présentant de l’information organisée.</p>
+                    <figure>
+                        <button class="lightbox-trigger" type="button">
+                            <img src="project2.svg" alt="Illustration d’un tableau de bord Web fictif" loading="lazy" decoding="async">
+                        </button>
+                        <figcaption>Maquette d’un tableau de bord Web</figcaption>
+                    </figure>
+                </article>
+                <article class="project-card" id="project3" data-category="web">
+                    <h3>Portfolio personnel</h3>
+                    <p>Concept de portfolio adaptatif présentant des projets, des compétences et des coordonnées.</p>
+                    <figure>
+                        <button class="lightbox-trigger" type="button">
+                            <img src="project3.svg" alt="Illustration de la mise en page d’un portfolio personnel" loading="lazy" decoding="async">
+                        </button>
+                        <figcaption>Concept de site Web de portfolio personnel</figcaption>
+                    </figure>
+                </article>
+                <article class="project-card" id="project4" data-category="dashboard">
+                    <h3>Tableau météo</h3>
+                    <p>Maquette de tableau de bord permettant de consulter la météo actuelle et les prévisions des prochains jours.</p>
+                    <figure>
+                        <button class="lightbox-trigger" type="button">
+                            <img src="project4.svg" alt="Illustration d’un tableau météo avec un soleil et des cartes de prévisions" loading="lazy" decoding="async">
+                        </button>
+                        <figcaption>Concept de tableau météo</figcaption>
+                    </figure>
+                </article>
+                <article class="project-card" id="project5" data-category="food">
+                    <h3>Recherche de recettes</h3>
+                    <p>Concept de site de recettes avec des photos de plats, des ingrédients et des étapes de préparation.</p>
+                    <figure>
+                        <button class="lightbox-trigger" type="button">
+                            <img src="project5.svg" alt="Illustration d’une fiche de recette avec un plat et ses ingrédients" loading="lazy" decoding="async">
+                        </button>
+                        <figcaption>Concept de site de recherche de recettes</figcaption>
+                    </figure>
+                </article>
+                <article class="project-card" id="project6" data-category="productivity">
+                    <h3>Gestionnaire de tâches</h3>
+                    <p>Concept de liste de tâches pour organiser des projets et suivre les activités quotidiennes.</p>
+                    <figure>
+                        <button class="lightbox-trigger" type="button">
+                            <img src="project6.svg" alt="Illustration d’une application de gestion de tâches avec une liste de vérification" loading="lazy" decoding="async">
+                        </button>
+                        <figcaption>Concept d’application de gestion de tâches</figcaption>
+                    </figure>
+                </article>
+            </div>
+        </section>
+        <dialog class="lightbox-dialog" aria-label="Image de projet agrandie">
+            <button class="lightbox-close" type="button" aria-label="Fermer l’image agrandie">&times;</button>
+            <img class="lightbox-image" src="" alt="">
+            <p class="lightbox-caption"></p>
+        </dialog>
+        <section id="skills" aria-labelledby="skills-heading">
+            <h2 id="skills-heading">Compétences</h2>
+            <p>Voici quelques technologies utilisées en développement Web.</p>
+            <ul>
+                <li class="skill-html">HTML</li>
+                <li class="skill-css">CSS</li>
+                <li class="skill-javascript">JavaScript</li>
+            </ul>
+        </section>
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact</h2>
+            <p>Pour communiquer avec moi, remplissez le formulaire ci-dessous.</p>
+            <form id="contact-form" action="#" method="post" aria-label="Formulaire de contact">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" autocomplete="name" required aria-describedby="name-feedback">
+                <span class="validation-message" id="name-feedback" aria-live="polite"></span>
+                <label for="email">Adresse courriel :</label>
+                <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="email-feedback">
+                <span class="validation-message" id="email-feedback" aria-live="polite"></span>
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" minlength="10" required aria-describedby="message-feedback"></textarea>
+                <span class="validation-message" id="message-feedback" aria-live="polite"></span>
+                <button type="submit">Envoyer</button>
+            </form>
+            <p id="thank-you-message" hidden>Merci de m’avoir écrit! Je vous répondrai bientôt.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Module 5 – Pour le plaisir</p>
+    </footer>
+</body>
+</html>

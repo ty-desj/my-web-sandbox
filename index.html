@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Portfolio | HTML, CSS &amp; JavaScript</title>
+    <meta name="description" content="Explore a web development portfolio featuring projects and skills in HTML, CSS, and JavaScript. Get in touch through the contact form.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Web Development Portfolio | HTML, CSS &amp; JavaScript">
+    <meta property="og:description" content="Explore web development projects and skills in HTML, CSS, and JavaScript.">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header id="home">
+        <h1>My Portfolio</h1>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" hidden>
+            <span class="menu-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+            <span>Menu</span>
+        </button>
+        <nav id="primary-navigation" aria-label="Main navigation">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-me">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="index_fr.html">Français</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about-me" aria-labelledby="about-heading">
+            <h2 id="about-heading">About Me</h2>
+            <p>This is the section about me. A bunch of irrelevant information goes here.</p>
+        </section>
+        <section id="projects" aria-labelledby="projects-heading">
+            <h2 id="projects-heading">Projects</h2>
+            <p>This is the section about my projects. A bunch of irrelevant information goes here.</p>
+            <div class="project-filter">
+                <label for="project-category">Filter projects by category:</label>
+                <select id="project-category">
+                    <option value="all">All categories</option>
+                    <option value="web">Web design</option>
+                    <option value="dashboard">Dashboards</option>
+                    <option value="food">Food</option>
+                    <option value="productivity">Productivity</option>
+                </select>
+                <p id="project-filter-status" aria-live="polite"></p>
+            </div>
+            <div class="project-cards" role="region" aria-label="Scrollable project cards" tabindex="0">
+                <article class="project-card" id="project1" data-category="web">
+                    <h3>Project 1</h3>
+                    <p>This is the first project. A bunch of irrelevant information goes here.</p>
+                    <figure>
+                        <button class="lightbox-trigger" type="button">
+                            <img src="project1.svg" alt="Illustration of a sample web project page" loading="lazy" decoding="async">
+                        </button>
+                        <figcaption>Screenshot of Project 1</figcaption>
+                    </figure>
+                </article>
+                <article class="project-card" id="project2" data-category="dashboard">
+                    <h3>Project 2</h3>
+                    <p>This is the second project. A bunch of irrelevant information goes here.</p>
+                    <figure>
+                        <button class="lightbox-trigger" type="button">
+                            <img src="project2.svg" alt="Illustration of a sample web project dashboard" loading="lazy" decoding="async">
+                        </button>
+                        <figcaption>Screenshot of Project 2</figcaption>
+                    </figure>
+                </article>
+                <article class="project-card" id="project3" data-category="web">
+                    <h3>Personal Portfolio</h3>
+                    <p>A responsive portfolio concept showcasing projects, skills, and contact information.</p>
+                    <figure>
+                        <button class="lightbox-trigger" type="button">
+                            <img src="project3.svg" alt="Illustration of a personal portfolio website layout" loading="lazy" decoding="async">
+                        </button>
+                        <figcaption>Personal portfolio website concept</figcaption>
+                    </figure>
+                </article>
+                <article class="project-card" id="project4" data-category="dashboard">
+                    <h3>Weather Dashboard</h3>
+                    <p>A sample dashboard layout for checking current weather and a multi-day forecast.</p>
+                    <figure>
+                        <button class="lightbox-trigger" type="button">
+                            <img src="project4.svg" alt="Illustration of a weather dashboard with a sun and forecast cards" loading="lazy" decoding="async">
+                        </button>
+                        <figcaption>Weather dashboard concept</figcaption>
+                    </figure>
+                </article>
+                <article class="project-card" id="project5" data-category="food">
+                    <h3>Recipe Finder</h3>
+                    <p>A recipe browsing concept with space for food photos, ingredients, and cooking steps.</p>
+                    <figure>
+                        <button class="lightbox-trigger" type="button">
+                            <img src="project5.svg" alt="Illustration of a recipe card with food and ingredients" loading="lazy" decoding="async">
+                        </button>
+                        <figcaption>Recipe finder website concept</figcaption>
+                    </figure>
+                </article>
+                <article class="project-card" id="project6" data-category="productivity">
+                    <h3>Task Tracker</h3>
+                    <p>A simple task-list concept for organizing projects and keeping track of daily tasks.</p>
+                    <figure>
+                        <button class="lightbox-trigger" type="button">
+                            <img src="project6.svg" alt="Illustration of a task tracking application with a checklist" loading="lazy" decoding="async">
+                        </button>
+                        <figcaption>Task tracker application concept</figcaption>
+                    </figure>
+                </article>
+            </div>
+        </section>
+        <dialog class="lightbox-dialog" aria-label="Enlarged project image">
+            <button class="lightbox-close" type="button" aria-label="Close enlarged image">&times;</button>
+            <img class="lightbox-image" src="" alt="">
+            <p class="lightbox-caption"></p>
+        </dialog>
+        <section id="skills" aria-labelledby="skills-heading">
+            <h2 id="skills-heading">Skills</h2>
+            <p>This is the section about my skills. A bunch of irrelevant information goes here.</p>
+            <ul>
+                <li class="skill-html">HTML</li>
+                <li class="skill-css">CSS</li>
+                <li class="skill-javascript">JavaScript</li>
+            </ul>
+        </section>
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact</h2>
+            <p>This is the section about how to contact me. A bunch of irrelevant information goes here.</p>
+            <form id="contact-form" action="#" method="post" aria-label="Contact form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" autocomplete="name" required aria-describedby="name-feedback">
+                <span class="validation-message" id="name-feedback" aria-live="polite"></span>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="email-feedback">
+                <span class="validation-message" id="email-feedback" aria-live="polite"></span>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" minlength="10" required aria-describedby="message-feedback"></textarea>
+                <span class="validation-message" id="message-feedback" aria-live="polite"></span>
+                <button type="submit">Send</button>
+            </form>
+            <p id="thank-you-message" hidden>Thank you for reaching out! I'll get back to you soon.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Module 5 - For Fun</p>
+    </footer>
+</body>
+</html>
